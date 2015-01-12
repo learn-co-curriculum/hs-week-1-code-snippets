@@ -9,7 +9,9 @@ type: code snippets
 
 There are several pieces of relatively standard code that we will need to set up in our Sinatra application. All of that code for each of the files below is provided for your copy and pasting convenience. 
 
-## Gemfile
+Take heed of the spacing and indentation. Pretty code = easy to read code = happy developers.
+
+### Gemfile
 
 ```ruby
 source "https://rubygems.org"
@@ -22,7 +24,7 @@ group :development do
 end
 ```
 
-## config.ru
+### config.ru
 
 ```ruby
 require './app/controllers/application_controller'
@@ -30,14 +32,14 @@ require './app/controllers/application_controller'
 run ApplicationController
 ```
 
-## environment.rb (in the config directory)
+### environment.rb (in the config directory)
 
 ```ruby
 require 'bundler'
 Bundler.require
 ```
 
-## application_controller.rb
+### application_controller.rb
 (This doesn't include the routes you will be creating in class.)
 
 ```ruby
