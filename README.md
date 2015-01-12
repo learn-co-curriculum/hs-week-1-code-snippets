@@ -40,7 +40,7 @@ Bundler.require
 ```
 
 ### application_controller.rb
-(This doesn't include the routes you will be creating in class.)
+(This does NOT include the routes you will be creating in class.)
 
 ```ruby
 require './config/environment'
