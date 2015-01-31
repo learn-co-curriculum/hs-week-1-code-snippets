@@ -58,7 +58,7 @@ end
 ```
 
 ### tweets.erb
-(In the app/views directory.)
+(In the app/views directory. This includes a link to the Bootstrap stylesheeet.)
 
 ```html
 <!doctype html>
