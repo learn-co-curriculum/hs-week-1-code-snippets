@@ -32,7 +32,8 @@ require './app/controllers/application_controller'
 run ApplicationController
 ```
 
-### environment.rb (in the config directory)
+### environment.rb 
+(In the config directory.)
 
 ```ruby
 require 'bundler'
@@ -40,7 +41,7 @@ Bundler.require
 ```
 
 ### application_controller.rb
-(This does NOT include the routes you will be creating in class.)
+(In the app/controllers directory.)
 
 ```ruby
 require './config/environment'
@@ -54,4 +55,23 @@ class ApplicationController < Sinatra::Base
   end
 
 end
+```
+
+### tweets.erb
+(In the app/views directory.)
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>Week 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body> 
+    <div class="container">
+
+
+    </div>
+  </body>
+</html>
 ```
