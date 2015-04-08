@@ -95,3 +95,56 @@ end
   </body>
 </html>
 ```
+
+### Code Snippet 7
+
+application_controller.rb:
+
+```ruby
+  get '/'
+    "Welcome to Fwitter"
+  end
+```
+
+
+###Code Snippet 8
+
+application_controller.rb
+
+```ruby
+  get '/'
+    erb :tweet
+  end
+```
+
+### Code Snippet 9:
+
+application_controller.rb:
+```ruby
+  get '/'
+    @tweet1 = Tweet.new("flatironschool", "We <3 Coding")
+    @tweet2 = Tweet.new("flatironschool", "Flatiron Pre-College Academy is amazing!")
+    @tweet3 = Tweet.new("flatironschool", "Our students can build Twitter, can yours?")
+    @tweet4 = Tweet.new("flatironschool", "#learnlovecode")
+    @tweet5 = Tweet.new("flatironschool", "Developers Developers Developers!"
+    @tweets = Tweet.all
+    erb :tweet
+  end
+```
+
+tweets.erb:
+
+<!doctype html>
+<html>
+  <head>
+    <title>Week 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body> 
+    <div class="container">
+      <% @tweets.each do |tweet| %>
+        <p><%= tweet%></p>
+      <% end %>
+    </div>
+  </body>
+</html>
