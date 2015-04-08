@@ -11,7 +11,7 @@ There are several pieces of relatively standard code that we will need to set up
 
 Take heed of the spacing and indentation. Pretty code = easy to read code = happy developers.
 
-### Gemfile
+### Gemfile - Code Snippet 1 
 
 ```ruby
 source "https://rubygems.org"
@@ -24,7 +24,7 @@ group :development do
 end
 ```
 
-### config.ru
+### config.ru - Code Snippet 2
 
 ```ruby
 require './app/controllers/application_controller'
@@ -32,7 +32,7 @@ require './app/controllers/application_controller'
 run ApplicationController
 ```
 
-### environment.rb 
+### environment.rb - Code Snippet 3
 (In the config directory.)
 
 ```ruby
@@ -40,7 +40,7 @@ require 'bundler'
 Bundler.require
 ```
 
-### application_controller.rb
+### application_controller.rb - Code Snippet 4
 (In the app/controllers directory.)
 
 ```ruby
@@ -57,7 +57,27 @@ class ApplicationController < Sinatra::Base
 end
 ```
 
-### tweets.erb
+### app/models/tweet.rb - Code Snippet 5
+```ruby
+  class Tweet
+    attr_accessor :username, :status
+
+    ALL_TWEETS = []
+
+    def initialize(username, status)
+      @username = username
+      @status = status
+      ALL_TWEETS << self
+    end
+
+    def self.all
+      ALL_TWEETS
+    end
+
+  end
+```
+
+### tweets.erb - Code Snippet 6
 (In the app/views directory. This includes a link to the Bootstrap stylesheeet.)
 
 ```html
