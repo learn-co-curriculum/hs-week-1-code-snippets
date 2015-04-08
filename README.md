@@ -7,11 +7,11 @@ type: code snippets
 
 ## Gimme that code!
 
-There are several pieces of relatively standard code that we will need to set up in our Sinatra application. All of that code for each of the files below is provided for your copy and pasting convenience. 
+There are several pieces of relatively standard code that we will need to set up in our Sinatra application. All of that code for each of the files below is provided for your copy and pasting convenience.
 
 Take heed of the spacing and indentation. Pretty code = easy to read code = happy developers.
 
-### Gemfile - Code Snippet 1 
+### Gemfile - Code Snippet 1
 
 ```ruby
 source "https://rubygems.org"
@@ -77,7 +77,7 @@ end
   end
 ```
 
-### tweets.erb - Code Snippet 6
+### index.erb - Code Snippet 6
 (In the app/views directory. This includes a link to the Bootstrap stylesheeet.)
 
 ```html
@@ -87,7 +87,7 @@ end
     <title>Week 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   </head>
-  <body> 
+  <body>
     <div class="container">
 
 
@@ -121,7 +121,7 @@ application_controller.rb
 
 application_controller.rb:
 ```ruby
-  get '/tweets'
+  get '/'
     @tweet1 = Tweet.new("flatironschool", "We <3 Coding")
     @tweet2 = Tweet.new("flatironschool", "Flatiron Pre-College Academy is amazing!")
     @tweet3 = Tweet.new("flatironschool", "Our students can build Twitter, can yours?")
@@ -132,7 +132,7 @@ application_controller.rb:
   end
 ```
 
-tweets.erb:
+index.erb:
 
 <!doctype html>
 <html>
@@ -140,7 +140,7 @@ tweets.erb:
     <title>Week 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   </head>
-  <body> 
+  <body>
     <div class="container">
       <% @tweets.each do |tweet| %>
         <p><%= tweet%></p>
