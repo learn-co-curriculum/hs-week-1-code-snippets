@@ -132,10 +132,12 @@ application_controller.rb:
   end
 ```
 
-index.erb:
+### Code Snippet 10:
 
-<!doctype html>
-<html>
+index.erb:
+```html
+  <!doctype html>
+  <html>
   <head>
     <title>Week 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -148,3 +150,4 @@ index.erb:
     </div>
   </body>
 </html>
+```
