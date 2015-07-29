@@ -1,9 +1,4 @@
----
-tags: sinatra, kids, ruby, advanced, code snippets
-language: ruby
-level: 2
-type: code snippets
----
+
 
 ## Gimme that code!
 
