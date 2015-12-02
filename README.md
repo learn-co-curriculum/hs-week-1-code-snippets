@@ -146,3 +146,5 @@ index.erb:
   </body>
 </html>
 ```
+
+<a href='https://learn.co/lessons/hs-week-1-code-snippets' data-visibility='hidden'>View this lesson on Learn.co</a>
