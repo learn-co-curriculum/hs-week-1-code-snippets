@@ -147,4 +147,4 @@ index.erb:
 </html>
 ```
 
-<a href='https://learn.co/lessons/hs-week-1-code-snippets' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-week-1-code-snippets' title='Gimme that code!'>Gimme that code!</a> on Learn.co and start learning to code for free.</p>
