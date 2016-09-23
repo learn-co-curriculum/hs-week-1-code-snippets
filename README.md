@@ -121,7 +121,7 @@ application_controller.rb:
     @tweet2 = Tweet.new("flatironschool", "Flatiron Pre-College Academy is amazing!")
     @tweet3 = Tweet.new("flatironschool", "Our students can build Twitter, can yours?")
     @tweet4 = Tweet.new("flatironschool", "#learnlovecode")
-    @tweet5 = Tweet.new("flatironschool", "Developers Developers Developers!"
+    @tweet5 = Tweet.new("flatironschool", "Developers Developers Developers!")
     @tweets = Tweet.all
     erb :tweet
   end
